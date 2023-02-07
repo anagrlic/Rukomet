@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Rukomet.Models.Klub>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3 class="text-white">Unesi novi klub:</h3>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<br />
+<br />
+<form typeof="get" class="text-white">
+    Unesi tekst za filtiranje:
+    <input type="search" name="search" value="@ViewBag.Search"/>
+    <input type="submit" value="Traži" />
+</form>
+<br />
+<br />
+
+<table class="table">
+    <thead class="text-white">
+        <tr>
+            <th class="text-white">
+                @Html.DisplayNameFor(model => model.ImeKluba)
+            </th>
+            <th class="text-white">
+                @Html.DisplayNameFor(model => model.GradKluba)
+            </th>
+            <th class="text-white">
+                @Html.DisplayNameFor(model => model.BrojTrofeja)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="text-white">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImeKluba)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GradKluba)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrojTrofeja)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="text-white">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="text-white">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="text-white">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

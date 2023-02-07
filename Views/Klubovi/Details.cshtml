@@ -1,0 +1,36 @@
+﻿@model Rukomet.Models.Klub
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="text-white">Details</h1>
+
+<div class="text-white">
+    <h4 class="text-white">Klub</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ImeKluba)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ImeKluba)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GradKluba)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GradKluba)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BrojTrofeja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BrojTrofeja)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index" class="text-white">Back to List</a>
+</div>

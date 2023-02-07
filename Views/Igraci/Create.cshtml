@@ -1,0 +1,45 @@
+﻿@model Rukomet.Models.Igrac
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h3 class="text-white">Dodaj novog igrača</h3>
+<hr />
+<div class="row">
+    <div class = "col-sm-4">
+        <form asp-action="Create" class="text-white">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Ime" class="control-label"></label>
+                <input asp-for="Ime" class="form-control" />
+                <span asp-validation-for="Ime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prezime" class="control-label"></label>
+                <input asp-for="Prezime" class="form-control" />
+                <span asp-validation-for="Prezime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrojDresa" class="control-label"></label>
+                <input asp-for="BrojDresa" class="form-control" />
+                <span asp-validation-for="BrojDresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Klub" class="control-label"></label>
+                <input asp-for="Klub" class="form-control" />
+                <span asp-validation-for="Klub" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="text-white-50">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rukomet", "Rukomet.csproj", "{689C727D-D1B2-4390-8ECA-EA4040CE06E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{689C727D-D1B2-4390-8ECA-EA4040CE06E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689C727D-D1B2-4390-8ECA-EA4040CE06E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689C727D-D1B2-4390-8ECA-EA4040CE06E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689C727D-D1B2-4390-8ECA-EA4040CE06E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C2F3FE2-9654-4EA4-B8BB-15C7B8DD4B05}
+	EndGlobalSection
+EndGlobal
